@@ -1,102 +1,15 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-<head>
+---
+permalink: "index.html"
+---
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta name="author" content="SemiColonWeb">
-	<meta name="description" content="Create SAAS &amp; AI Subscription Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+{% extends "src/base.njk" %}
 
-	<!-- Font Imports -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Cookie&display=swap" rel="stylesheet">
+{% block head %}
+<title> Lime | Innovación Pública</title>
+{% endblock %}
 
-	<!-- Core Style -->
-	<link rel="stylesheet" href="style.css">
-
-	<!-- Font Icons -->
-	<link rel="stylesheet" href="css/font-icons.css">
-
-	<!-- Plugins/Components CSS -->
-	<link rel="stylesheet" href="css/swiper.css">
-
-	<!-- Saas Page Module Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/saas-2/saas-2.css">
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Document Title
-	============================================= -->
-	<title>SAAS 2 | Canvas</title>
-
-</head>
-
-<body class="stretched">
-
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper">
-
-		<!-- Header
-		============================================= -->
-		<header id="header">
-			<div id="header-wrap">
-				<div class="container">
-					<div class="header-row">
-
-						<!-- Logo
-						============================================= -->
-						<div id="logo" class="col-lg-2 me-lg-auto">
-							<a href="index.html" class="w-auto">
-								<img class="logo-default" srcset="demos/saas-2/images/logo.png, demos/saas-2/images/logo@2x.png 2x" src="demos/saas-2/images/logo@2x.png" alt="Canvas Logo">
-								<img class="logo-dark" srcset="demos/saas-2/images/logo-dark.png, demos/saas-2/images/logo-dark@2x.png 2x" src="demos/saas-2/images/logo-dark@2x.png" alt="Canvas Logo">
-							</a>
-						</div><!-- #logo end -->
-
-                        <div class="header-misc ms-auto col-lg-2 justify-content-lg-end">
-							<a href="#" class="button button-border button-rounded rounded border-contrast-500 mx-0" style="--cnvs-btn-fontsize: 1.125rem"><i class="bi-asterisk d-none d-md-inline-block me-2 fs-6"></i>Get Started</a>
-						</div>
-
-						<div class="primary-menu-trigger">
-							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-							</button>
-						</div>
-
-						<!-- Primary Navigation
-						============================================= -->
-						<nav class="primary-menu with-arrows">
-
-							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-services"><div>Services</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-examples"><div>Examples</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-pricing"><div>Pricing</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-faqs"><div>FAQs</div></a>
-								</li>
-								<li class="menu-item">
-									<a href="#" class="menu-link" data-href="#section-blog"><div>Blog</div></a>
-								</li>
-							</ul>
-
-						</nav><!-- #primary-menu end -->
-
-					</div>
-				</div>
-			</div>
-			<div class="header-wrap-clone"></div>
-		</header><!-- #header end -->
-
-		<!-- Slider
+{% block content %}
+        <!-- Slider
 		============================================= -->
 		<div id="slider" class="slider-element min-vh-0">
 
@@ -112,7 +25,7 @@
 					</div>
 
 					<div class="col-lg-6 col-xxl-7">
-						<img src="demos/saas-2/images/hero.svg" alt="..">
+						<img src="/assets/demos/saas-2/images/hero.svg" alt="..">
 					</div>
 
 				</div>
@@ -134,11 +47,11 @@
 
 							<div class="col-lg-8">
 								<div class="row g-4 align-items-center justify-content-center">
-									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="demos/saas-2/images/clients/cnn.svg" alt="Brands"></div>
-									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="demos/saas-2/images/clients/github.svg" alt="Brands"></div>
-									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="demos/saas-2/images/clients/google.svg" alt="Brands"></div>
-									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="demos/saas-2/images/clients/paypal.svg" alt="Brands"></div>
-									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="demos/saas-2/images/clients/vimeo.svg" alt="Brands"></div>
+									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="/assets/demos/saas-2/images/clients/cnn.svg" alt="Brands"></div>
+									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="/assets/demos/saas-2/images/clients/github.svg" alt="Brands"></div>
+									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="/assets/demos/saas-2/images/clients/google.svg" alt="Brands"></div>
+									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="/assets/demos/saas-2/images/clients/paypal.svg" alt="Brands"></div>
+									<div class="col-md-2 col-4 flex-fill text-center op-08"><img height="46" src="/assets/demos/saas-2/images/clients/vimeo.svg" alt="Brands"></div>
 								</div>
 							</div>
 						</div>
@@ -180,13 +93,13 @@
 									<div class="swiper swiper-tab-container">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
-												<img src="demos/saas-2/images/new/tabs/app.svg" alt=".." class="w-100 rounded-xxl">
+												<img src="/assets/demos/saas-2/images/new/tabs/app.svg" alt=".." class="w-100 rounded-xxl">
 											</div>
 											<div class="swiper-slide">
-												<img src="demos/saas-2/images/new/tabs/features.svg" alt=".." class="w-100 rounded-xxl bg-success bg-opacity-10">
+												<img src="/assets/demos/saas-2/images/new/tabs/features.svg" alt=".." class="w-100 rounded-xxl bg-success bg-opacity-10">
 											</div>
 											<div class="swiper-slide">
-												<img src="demos/saas-2/images/new/tabs/pay.jpg" alt=".." class="w-100 rounded-xxl">
+												<img src="/assets/demos/saas-2/images/new/tabs/pay.jpg" alt=".." class="w-100 rounded-xxl">
 											</div>
 										</div>
 									</div>
@@ -257,7 +170,7 @@
 
 									<div class="col-xl-7">
 										<div class="d-flex position-relative h-100 min-vh-25 overflow-hidden" style="border-radius: 20px;">
-											<img src="demos/saas-2/images/service.jpg" alt="..." class="object-cover w-100 h-100 position-absolute">
+											<img src="/assets/demos/saas-2/images/service.jpg" alt="..." class="object-cover w-100 h-100 position-absolute">
 											<div class="position-relative z-1 mt-5 ms-5">
 												<span class="badge rounded-pill text-bg-warning px-3 py-2 mb-2 fw-normal">Customizable</span>
 											</div>
@@ -277,7 +190,7 @@
 														<a href="#" class="button button-large button-border h-bg-black button-dark button-black rounded-pill m-0">Learn More</a>
 													</div>
 													<div class="col-md-6">
-														<img src="demos/saas-2/images/svg/group.svg" alt="Image">
+														<img src="/assets/demos/saas-2/images/svg/group.svg" alt="Image">
 													</div>
 												</div>
 												<div class="line border-black border-width-2"></div>
@@ -287,19 +200,19 @@
 													</div>
 
 													<div class="col-lg-3">
-														<img src="demos/saas-2/images/svg/analysis.svg" alt=".." height="52">
+														<img src="/assets/demos/saas-2/images/svg/analysis.svg" alt=".." height="52">
 														<h4 class="mt-4 mb-2 fs-5 fw-bold"> Data Analysis</h4>
 														<p class="mb-0">Professionally target bricks and clicks applications whereas.</p>
 													</div>
 
 													<div class="col-lg-3">
-														<img src="demos/saas-2/images/svg/paybill.svg" alt=".." height="52">
+														<img src="/assets/demos/saas-2/images/svg/paybill.svg" alt=".." height="52">
 														<h4 class="mt-4 mb-2 fs-5 fw-bold">Pay Invoice</h4>
 														<p class="mb-0">Progressively network just in time collaboration and idea sharing.</p>
 													</div>
 
 													<div class="col-lg-3">
-														<img src="demos/saas-2/images/svg/install.svg" alt=".." height="52">
+														<img src="/assets/demos/saas-2/images/svg/install.svg" alt=".." height="52">
 														<h4 class="mt-4 mb-2 fs-5 fw-bold">Installation</h4>
 														<p class="mb-0">Synergistically customized technology with schemas.</p>
 													</div>
@@ -332,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="d-none d-md-block z-2 position-relative" src="demos/saas-2/images/new/cards-bg.png" alt="...">
+                    <img class="d-none d-md-block z-2 position-relative" src="/assets/demos/saas-2/images/new/cards-bg.png" alt="...">
                 </div>
 
 				<div id="section-pricing" class="page-section py-5 py-lg-6">
@@ -386,7 +299,7 @@
                                     <div class="pricing-action p-0 mt-auto">
                                         <a href="#" class="button fw-semibold w-100 py-3 px-4 d-flex justify-content-between rounded-pill mx-0">Get Started <i class="bi-arrow-right"></i></a>
                                     </div>
-									<img src="demos/saas-2/images/svg/pricing-bg.svg" alt="..." class="pricing-bg" >
+									<img src="/assets/demos/saas-2/images/svg/pricing-bg.svg" alt="..." class="pricing-bg" >
 								</div>
 
 							</div>
@@ -409,7 +322,7 @@
 									<div class="pricing-features bg-transparent border-bottom-0 border-width-2 border-dark mt-5 pt-5 pb-3">
 										<p class="lead fw-bold mb-3">Included:</p>
 										<ul class="iconlist">
-											<li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Unlimited</strong> Niche Demos</span></li>
+											<li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Unlimited</strong> Niche /assets/demos</span></li>
 											<li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>SEO</strong> Features</span></li>
 											<li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>Ultimate</strong> Access</span></li>
 											<li class="my-1"><i class="bi-patch-check-fill"></i> <span><strong>All</strong> User Accounts</span></li>
@@ -435,7 +348,7 @@
 								<h3 class="display-3 ls-n-3 fw-bolder mb-3">
 									Frequently asked  <span class="gradient-text gradient-color ls-0">Questions</span></h3>
 								<p class="lead op-08 mb-5">Assertively provide access to cutting edge e-markets <br> support proactive resources rapidiously.</p>
-								<img src="demos/saas-2/images/svg/faqs.svg" alt="...">
+								<img src="/assets/demos/saas-2/images/svg/faqs.svg" alt="...">
 							</div>
 							<div class="col-lg-6 bg-contrast-0 p-5 rounded-xxl">
 								<div class="toggle">
@@ -566,7 +479,7 @@
 							<div class="w-100"></div>
 
 							<div class="col-lg-9">
-								<img src="demos/saas-2/images/new/screen.png" alt="..." class="mt-5" style="transform: translate3d(0,calc(150px * var(--cnvs-scroll-end)),0); transition:transform .1s linear;">
+								<img src="/assets/demos/saas-2/images/new/screen.png" alt="..." class="mt-5" style="transform: translate3d(0,calc(150px * var(--cnvs-scroll-end)),0); transition:transform .1s linear;">
 							</div>
 						</div>
 					</div>
@@ -585,7 +498,7 @@
 								<div class="entry d-flex flex-column h-100 mb-0 bg-contrast-0 p-4 rounded-xxl" style="--cnvs-post-item-margin:0;">
 									<div class="entry-image mb-3">
 										<a href="#">
-											<img src="demos/saas-2/images/new/blogs/1.svg" alt="Image 3" class="rounded-6">
+											<img src="/assets/demos/saas-2/images/new/blogs/1.svg" alt="Image 3" class="rounded-6">
 										</a>
 									</div>
 									<div class="entry-desc mb-auto">
@@ -606,7 +519,7 @@
 								<div class="entry d-flex flex-column h-100 mb-0 bg-contrast-0 p-4 rounded-xxl" style="--cnvs-post-item-margin:0;">
 									<div class="entry-image mb-3">
 										<a href="#">
-											<img src="demos/saas-2/images/new/blogs/2.svg" alt="Image 3" class="rounded-6">
+											<img src="/assets/demos/saas-2/images/new/blogs/2.svg" alt="Image 3" class="rounded-6">
 										</a>
 									</div>
 									<div class="entry-desc mb-auto">
@@ -627,7 +540,7 @@
 								<div class="entry d-flex flex-column h-100 mb-0 bg-contrast-0 p-4 rounded-xxl" style="--cnvs-post-item-margin:0;">
 									<div class="entry-image mb-3">
 										<a href="#">
-											<img src="demos/saas-2/images/new/blogs/3.svg" alt="Image 3" class="rounded-6">
+											<img src="/assets/demos/saas-2/images/new/blogs/3.svg" alt="Image 3" class="rounded-6">
 										</a>
 									</div>
 									<div class="entry-desc mb-auto">
@@ -645,7 +558,7 @@
 							</div>
 						</div>
 
-						<div class="row justify-content-center text-center p-lg-6 p-5 rounded-xxl gx-0 dark mt-5 mt-lg-6" style="background: url('demos/saas-2/images/new/footer-promo.svg'); background-position: center center; background-size: cover;">
+						<div class="row justify-content-center text-center p-lg-6 p-5 rounded-xxl gx-0 dark mt-5 mt-lg-6" style="background: url('/assets/demos/saas-2/images/new/footer-promo.svg'); background-position: center center; background-size: cover;">
 							<div class="col-lg-8 text-center">
 								<div class="position-relative z-1">
 									<h3 class="display-4 fw-bolder text-white mb-3 ls-n-1">Start your Website!!</h3>
@@ -660,178 +573,4 @@
 
 			</div>
 		</section><!-- #content end -->
-
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="bg-white border-0">
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap">
-					<div class="row gx-4 gy-5">
-
-						<div class="col-lg-3 col-6">
-
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">How we Work</h4>
-
-								<ul>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-									<li><a href="#">Canvas Blog</a></li>
-								</ul>
-
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-6">
-
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">About Us</h4>
-
-								<ul>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Documentation</a></li>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-									<li><a href="#">Contact Us</a></li>
-								</ul>
-
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-6">
-
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">How we do</h4>
-
-								<ul>
-									<li><a href="#">Plugins</a></li>
-									<li><a href="#">Support Forums</a></li>
-									<li><a href="#">Themes</a></li>
-									<li><a href="#">Canvas Blog</a></li>
-									<li><a href="#">Contact Us</a></li>
-								</ul>
-
-							</div>
-
-						</div>
-
-						<div class="col-lg-3 col-6">
-
-							<div class="widget">
-
-								<h4 class="fw-bolder text-contrast-1000 text-smaller text-uppercase mb-4">Need Help?</h4>
-
-								<ul class="list-unstyled">
-									<li class="mb-3"><a class="text-dark" href="#"><i class="me-3 color bi-telephone-fill"></i>+0 (11) 222 333</a></li>
-									<li class="mb-3"><a class="text-dark" href="#"><i class="me-3 color bi-envelope-fill"></i>no-reply@canvas.com</a></li>
-									<li class="mb-3"><i class="me-3 color bi-calendar-week-fill"></i>Mon - Sat | 09:00 - 16:00</li>
-									<li><i class="me-3 color bi-calendar-x-fill"></i>Sunday Closed</li>
-								</ul>
-
-							</div>
-
-						</div>
-
-					</div>
-				</div><!-- .footer-widgets-wrap end -->
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights" class="bg-transparent border-top op-08">
-				<div class="container text-center">
-
-					Copyrights &copy; 2023 All Rights Reserved by SemiColonWeb
-					<div class="copyright-links"><a href="https://1.envato.market/c/1309643/480739/4415?u=http%3A%2F%2Fthemeforest.net%2Fuser%2Fsemicolonweb%2Fportfolio" target="_blank">Portfolio</a> / <a href="http://support.semicolonweb.com" target="_blank">Support</a></div>
-
-				</div>
-			</div>
-		</footer><!-- #footer end -->
-
-	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="uil uil-angle-up rounded-circle bg-color h-bg-dark"></div>
-
-	<!-- JavaScripts
-	============================================= -->
-	<script src="js/plugins.min.js"></script>
-	<script src="js/functions.bundle.js"></script>
-
-	<script>
-		window.addEventListener( 'load', function() {
-			var swiperParent = new Swiper('.swiper-testimonial', {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				navigation: {
-					prevEl: '.slider-arrow-left',
-					nextEl: '.slider-arrow-right'
-				},
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-				breakpoints: {
-					1: {
-						slidesPerView: 1
-					},
-					576: {
-						slidesPerView: 1
-					},
-					768: {
-						slidesPerView: 2
-					},
-					1200: {
-						slidesPerView: 3
-					}
-				}
-			});
-
-			var SwiperTabsContainer = new Swiper('.swiper-tab-container', {
-				loop: true,
-				slidesPerView: 1,
-				autoHeight: true,
-				autoplay: {
-					delay: 5000,
-					disableOnInteraction: false,
-					autoplayDisableOnInteraction: false
-				},
-				effect: 'fade',
-				fadeEffect: {
-					crossFade: true
-				},
-				longSwipes: true,
-				autoplayDisableOnInteraction:true,
-				on: {
-					activeIndexChange: function(swiper) {
-						var index = swiper.realIndex;
-						jQuery('.swiper-tab-link').removeClass('active');
-						jQuery('.swiper-tab-link').eq(index).addClass('active');
-					}
-				}
-			});
-
-			jQuery('.swiper-tab-link').on('click', function() {
-				var index = jQuery(this).index();
-				SwiperTabsContainer.slideToLoop(index);
-				jQuery('.swiper-tab-link').removeClass('active');
-				jQuery(this).addClass('active');
-			});
-		});
-	</script>
-
-</body>
-</html>
+{% endblock %}
